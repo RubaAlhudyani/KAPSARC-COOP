@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chart Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            height: 50px;
+        }
+
+        .bar {
+            background-color: #333;
+            height: 10px;
+            width: 100%;
+        }
+
+        .chart-container {
+            max-width: 800px;
+            max-height: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .chart-Anylsis {
+            background-color: #008080;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+            height: 50px;
+            width: 200%;
+
+        }        
+
+	.chart-header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+            height: 50px;
+            width: 200%;
+
+        }
+
+        .chart-description {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .chart-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+    </style>
+ 
+</head>
+<body>
+    <div class="header">
+        <h1>Chart Dashboard</h1>
+    </div>
+
+    <div class="bar"> </div>
+
+    <div class="chart-container">
+        <div class="chart-Anylsis">
+            <h2>Crude Oil Daily Analysis</h2> 
+        </div>
+	<br>
+        <div class="chart-header">
+            <h3>Bar Chart: Sum of All Areas by Year</h3>
+        </div>
+
+        <div class="chart-description">
+            <p>This chart displays the sum of all areas for each year.</p>
+        </div>
+        <img class="chart-image" src="BarChartSumByYear.png" alt="Chart">
+
+	<br>
+        <div class="chart-header">
+            <h3> Line Chart: Trends Over Time for a Specific Product </h3>
+        </div>
+
+        <div class="chart-description">
+            <p>This Line chart displays the trends Over Time for WTI - Cushing, Oklahoma Product Area</p>
+        </div>
+        <img class="chart-image" src="WTI Cushing Oklahoma LineChart.png" alt="Chart">
+
+ <br>
+	 <div class="chart-Anylsis">
+            <h2>Crude Oil Monthly Analysis</h2> 
+        </div>
+	<br>
+
+        <div class="chart-header">
+            <h3>Scatter Plot: Relationship Between Variables</h3>
+        </div>
+
+        <div class="chart-description">
+            <p>Relationship Between November and June.</p>
+        </div>
+        <img class="chart-image" src="RelationshipNovJun.png" alt="Chart">
+
+        <div class="chart-header">
+            <h3>Pie Chart: Distribution of Areas</h3>
+        </div>
+
+        <div class="chart-description">
+            <p>Distribution of Areas On October using pie chart.</p>
+        </div>
+        <img class="chart-image" src="Distribution of Areas on Oct_23 pie_chart.png" alt="Chart">
+
+ <br>
+    </div>
+</body>
+</html>
